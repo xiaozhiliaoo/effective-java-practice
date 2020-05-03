@@ -31,4 +31,8 @@ public class Stack {
 		if (elements.length == size)
 			elements = Arrays.copyOf(elements, 2 * size + 1);
 	}
+
+	public static void main(String[] args) {
+
+	}
 }

@@ -3,14 +3,13 @@ package org.effectivejava.examples.chapter10.item69;
 
 import java.util.concurrent.CountDownLatch;
 import java.util.concurrent.Executor;
+import java.util.concurrent.Executors;
 
 public class ConcurrentTimer {
 	private ConcurrentTimer() {
 	} // Noninstantiable
 
-	public static long time(Executor executor,
-							int concurrency,
-			final Runnable action) throws InterruptedException {
+	public static long time(Executor executor, int concurrency, final Runnable action) throws InterruptedException {
 		final CountDownLatch ready = new CountDownLatch(concurrency);
 		final CountDownLatch start = new CountDownLatch(1);
 		final CountDownLatch done = new CountDownLatch(concurrency);
@@ -36,5 +35,9 @@ public class ConcurrentTimer {
 		start.countDown(); // And they're off!
 		done.await(); // Wait for all workers to finish
 		return System.nanoTime() - startNanos;
+	}
+
+	public static void main(String[] args) throws InterruptedException {
+		ConcurrentTimer.time(Executors.newFixedThreadPool(4), 4, () -> System.out.println(1000));
 	}
 }

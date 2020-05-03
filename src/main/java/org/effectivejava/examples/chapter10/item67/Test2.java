@@ -5,8 +5,7 @@ import java.util.HashSet;
 
 public class Test2 {
 	public static void main(String[] args) {
-		ObservableSet<Integer> set = new ObservableSet<Integer>(
-				new HashSet<Integer>());
+		ObservableSet<Integer> set = new ObservableSet<Integer>(new HashSet<Integer>());
 
 		set.addObserver(new SetObserver<Integer>() {
 			public void added(ObservableSet<Integer> s, Integer e) {

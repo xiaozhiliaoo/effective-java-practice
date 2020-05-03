@@ -26,17 +26,17 @@ public class ObservableSet<E> extends ForwardingSet<E> {
 	}
 
 	// This method is the culprit  通知方法
-//	private void notifyElementAdded(E element) {
-//		synchronized (observers) {
-//			for (SetObserver<E> observer : observers) {
-//				//调用外部方法
-//				observer.added(this, element);
-//			}
-//		}
-//	}
+	private void notifyElementAdded(E element) {
+		synchronized (observers) {
+			for (SetObserver<E> observer : observers) {
+				//调用外部方法
+				observer.added(this, element);
+			}
+		}
+	}
 
 	// Alien method moved outside of synchronized block - open calls - Page 268
-	 private void notifyElementAdded(E element) {
+	 private void notifyElementAdded2(E element) {
 		 List<SetObserver<E>> snapshot = null;
 		 synchronized(observers) {
 			snapshot = new ArrayList<SetObserver<E>>(observers);

@@ -6,18 +6,19 @@ import java.util.concurrent.ExecutionException;
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 
+/**
+ * 线程池本身死锁
+ */
 public class Test3 {
 	public static void main(String[] args) {
-		ObservableSet<Integer> set = new ObservableSet<Integer>(
-				new HashSet<Integer>());
+		ObservableSet<Integer> set = new ObservableSet<Integer>(new HashSet<Integer>());
 
 		// Observer that uses a background thread needlessly
 		set.addObserver(new SetObserver<Integer>() {
 			public void added(final ObservableSet<Integer> s, Integer e) {
 				System.out.println(e);
 				if (e == 23) {
-					ExecutorService executor = Executors
-							.newSingleThreadExecutor();
+					ExecutorService executor = Executors.newSingleThreadExecutor();
 					final SetObserver<Integer> observer = this;
 					try {
 						executor.submit(new Runnable() {
