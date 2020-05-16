@@ -8,7 +8,7 @@ import java.net.URL;
 public class Curl {
     public static void main(String[] args) throws IOException {
         try (InputStream in = new URL(args[0]).openStream()) {
-            in.transferTo(System.out);
+           // in.transferTo(System.out);
         }
     }
 }
