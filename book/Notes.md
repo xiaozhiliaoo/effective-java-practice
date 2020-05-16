@@ -7,6 +7,9 @@ http://web.media.mit.edu/~lieber/Lieberary/OOP/Delegation/Delegation.html
 
 Java Precisely, Third Edition  https://www.itu.dk/~sestoft/javaprecisely/
 
+https://github.com/jbloch/effective-java-3e-source-code
+
+
 
 
 
