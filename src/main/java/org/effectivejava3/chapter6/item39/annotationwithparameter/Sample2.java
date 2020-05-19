@@ -1,5 +1,4 @@
 package org.effectivejava3.chapter6.item39.annotationwithparameter;
-import effectivejava.chapter6.item39.annotationwithparameter.ExceptionTest;
 
 import java.util.*;
 

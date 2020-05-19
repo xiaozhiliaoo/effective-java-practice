@@ -1,6 +1,7 @@
+/*
 package org.effectivejava3.chapter2.item8;
 
-import java.lang.ref.Cleaner;
+//import java.lang.ref.Cleaner;
 
 // An autocloseable class using a cleaner as a safety net (Page 32)
 public class Room implements AutoCloseable {
@@ -36,3 +37,4 @@ public class Room implements AutoCloseable {
         cleanable.clean();
     }
 }
+*/

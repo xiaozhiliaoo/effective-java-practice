@@ -23,7 +23,7 @@ public class InstrumentedSet<E> extends ForwardingSet<E> {
 
     public static void main(String[] args) {
         InstrumentedSet<String> s = new InstrumentedSet<>(new HashSet<>());
-        s.addAll(List.of("Snap", "Crackle", "Pop"));
+//        s.addAll(List.of("Snap", "Crackle", "Pop"));
         System.out.println(s.getAddCount());
     }
 }

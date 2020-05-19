@@ -1,6 +1,5 @@
 package org.effectivejava3.chapter6.item34;
 
-import static effectivejava.chapter6.item34.PayrollDay.PayType.*;
 import static org.effectivejava3.chapter6.item34.PayrollDay.PayType.WEEKDAY;
 import static org.effectivejava3.chapter6.item34.PayrollDay.PayType.WEEKEND;
 

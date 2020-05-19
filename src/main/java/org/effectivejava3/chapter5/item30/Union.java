@@ -13,9 +13,9 @@ public class Union {
 
     // Simple program to exercise generic method
     public static void main(String[] args) {
-        Set<String> guys = Set.of("Tom", "Dick", "Harry");
-        Set<String> stooges = Set.of("Larry", "Moe", "Curly");
-        Set<String> aflCio = union(guys, stooges);
-        System.out.println(aflCio);
+//        Set<String> guys = Set.of("Tom", "Dick", "Harry");
+//        Set<String> stooges = Set.of("Larry", "Moe", "Curly");
+//        Set<String> aflCio = union(guys, stooges);
+//        System.out.println(aflCio);
     }
 }

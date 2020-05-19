@@ -20,7 +20,8 @@ public class Chooser<T> {
     }
 
     public static void main(String[] args) {
-        List<Integer> intList = List.of(1, 2, 3, 4, 5, 6);
+        List<Integer> intList = null;
+//                List.of(1, 2, 3, 4, 5, 6);
 
         Chooser<Integer> chooser = new Chooser<>(intList);
 

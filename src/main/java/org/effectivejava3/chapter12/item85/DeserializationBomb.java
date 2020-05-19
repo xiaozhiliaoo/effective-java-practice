@@ -1,8 +1,10 @@
 package org.effectivejava3.chapter12.item85;
-import static effectivejava.chapter12.Util.*;
 
 import java.util.HashSet;
 import java.util.Set;
+
+import static org.effectivejava3.chapter12.Util.deserialize;
+import static org.effectivejava3.chapter12.Util.serialize;
 
 // Deserialization bomb - deserializing this stream takes forever - Page 340
 public class DeserializationBomb {

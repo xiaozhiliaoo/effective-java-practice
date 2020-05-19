@@ -1,7 +1,7 @@
 package org.effectivejava3.chapter3.item10.composition;
 
-import effectivejava.chapter3.item10.Color;
-import effectivejava.chapter3.item10.Point;
+import org.effectivejava3.chapter3.item10.Color;
+import org.effectivejava3.chapter3.item10.Point;
 
 import java.util.Objects;
 

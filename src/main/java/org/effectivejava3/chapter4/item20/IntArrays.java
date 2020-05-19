@@ -8,12 +8,14 @@ public class IntArrays {
 
         // The diamond operator is only legal here in Java 9 and later
         // If you're using an earlier release, specify <Integer>
-        return new AbstractList<>() {
-            @Override public Integer get(int i) {
+        return new AbstractList<Integer>() {
+            @Override
+            public Integer get(int i) {
                 return a[i];  // Autoboxing (Item 6)
             }
 
-            @Override public Integer set(int i, Integer val) {
+          //  @Override
+            public Integer set(int i, Integer val) {
                 int oldVal = a[i];
                 a[i] = val;     // Auto-unboxing
                 return oldVal;  // Autoboxing

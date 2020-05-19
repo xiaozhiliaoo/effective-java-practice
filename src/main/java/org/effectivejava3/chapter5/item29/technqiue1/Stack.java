@@ -1,5 +1,7 @@
 package org.effectivejava3.chapter5.item29.technqiue1;
-import effectivejava.chapter5.item29.EmptyStackException;
+
+
+import org.effectivejava2.examples.chapter03.item11.EmptyStackException;
 
 import java.util.Arrays;
 

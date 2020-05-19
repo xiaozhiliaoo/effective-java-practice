@@ -29,7 +29,7 @@ public class InstrumentedHashSet<E> extends HashSet<E> {
 
     public static void main(String[] args) {
         InstrumentedHashSet<String> s = new InstrumentedHashSet<>();
-        s.addAll(List.of("Snap", "Crackle", "Pop"));
+//        s.addAll(List.of("Snap", "Crackle", "Pop"));
         System.out.println(s.getAddCount());
     }
 }

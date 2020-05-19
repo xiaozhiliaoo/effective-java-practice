@@ -7,7 +7,7 @@ public class Test2 {
         ObservableSet<Integer> set =
                 new ObservableSet<>(new HashSet<>());
 
-        set.addObserver(new SetObserver<>() {
+        set.addObserver(new SetObserver<Integer>() {
             public void added(ObservableSet<Integer> s, Integer e) {
                 System.out.println(e);
                 if (e == 23)
