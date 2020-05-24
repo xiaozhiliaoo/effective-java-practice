@@ -7,6 +7,7 @@ import static org.effectivejava3.chapter12.Util.deserialize;
 import static org.effectivejava3.chapter12.Util.serialize;
 
 // Deserialization bomb - deserializing this stream takes forever - Page 340
+//https://gist.github.com/coekie/a27cc406fc9f3dc7a70d
 public class DeserializationBomb {
     public static void main(String[] args) throws Exception {
         System.out.println(bomb().length);
