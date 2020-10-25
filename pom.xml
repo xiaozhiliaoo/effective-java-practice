@@ -16,7 +16,7 @@
             <groupId>junit</groupId>
             <artifactId>junit</artifactId>
             <version>4.13</version>
-            <scope>test</scope>
+<!--            <scope>test</scope>-->
         </dependency>
 
     </dependencies>
@@ -25,8 +25,8 @@
             <plugin>
                 <artifactId>maven-compiler-plugin</artifactId>
                 <configuration>
-                    <source>1.8</source>
-                    <target>1.8</target>
+                    <source>1.9</source>
+                    <target>1.9</target>
                 </configuration>
             </plugin>
         </plugins>
