@@ -1,6 +1,6 @@
 # effective-java-practice
 
-effective-java2/3的书里面的代码
+effective-java2/3的书里面的代码，书籍，论文
 
 ## Book
 
@@ -16,3 +16,4 @@ effective-java2/3的书里面的代码
 
 ## Other
 
+[thinking-in-java](https://github.com/xiaozhiliaoo/thinkinginjava-practice)
