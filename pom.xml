@@ -1,10 +1,10 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
-    <groupId>effective-java-examples</groupId>
-    <artifactId>effective-java-examples</artifactId>
+    <groupId>effective-java-practice</groupId>
+    <artifactId>effective-java-practice</artifactId>
     <version>1.0</version>
-    <name>effective-java-examples</name>
+    <name>effective-java-practice</name>
     <description>Source code to the book "Effective Java Second Edition" created by Joshua Bloch</description>
     <url>http://java.sun.com/docs/books/effective/index.html</url>
     <organization>
@@ -16,13 +16,13 @@
             <groupId>junit</groupId>
             <artifactId>junit</artifactId>
             <version>4.13.1</version>
-<!--            <scope>test</scope>-->
         </dependency>
 
     </dependencies>
     <build>
         <plugins>
             <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-compiler-plugin</artifactId>
                 <configuration>
                     <source>1.9</source>
